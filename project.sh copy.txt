@@ -1,0 +1,16 @@
+#!/bin/bash 
+mkdir /Users/garrett/Documents/Epicodus/Week3/$1
+Cp /Users/garrett/Documents/Epicodus/scripts/bootstrap.css /Users/garrett/Documents/Epicodus/Week3/$1
+/css/
+Cp /Users/garrett/Documents/Epicodus/scripts/jquery-3.6.0.js /Users/garrett/Documents/Epicodus/Week3/$1/js/
+cd /Users/garrett/Documents/Epicodus/Week3/$1
+mkdir css js
+touch index.html README.md css/styles.css js/scripts.js
+Cp /Users/garrett/Documents/Epicodus/scripts/bootstrap.css /Users/garrett/Documents/Epicodus/Week3/$1
+/css/
+Cp /Users/garrett/Documents/Epicodus/scripts/jquery-3.6.0.js /Users/garrett/Documents/Epicodus/Week3/$1/js/
+git init
+git add .
+git remote add gb https://github.com/gbrough/$1
+git commit -m "create intial project index readme css and js files"
+git push gb main
